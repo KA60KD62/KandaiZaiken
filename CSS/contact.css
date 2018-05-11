@@ -125,7 +125,7 @@ body{
     width: 100%;
     height: 500px;
     padding: 180px 0 150px 0;
-    background-image: url(img/calling.jpeg);
+    background-image: url(../img/calling.jpeg);
     background-size: cover;
     text-align:center;    
 }
