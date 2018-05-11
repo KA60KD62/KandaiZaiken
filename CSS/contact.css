@@ -1,13 +1,78 @@
+body{
+    margin: 0;
+}
 /*見出し*/
-.title{
-    color: black;
-    font-size:220%;
+.ovi{
+    height:85px;
+    width:100%;
+    background-color:  rgb(24, 85, 97);
+    position: fixed;
+    top:0;
+    z-index:10;
+}
+.container-header{
+    width:100%;
+    height: 100%;
+    padding:0 15px;
+}
+.header-left{
+    float: left;
+    padding: 1.3% 0 0 10px;
+}
+.name-logo{
+    font-size: 220%;
+    color: white;
+}
+.header-right{
+    float: right;
+    position: relative;
+    width: 78px;
+    height: 85px;
+    left: -50px;
+    background-color:  rgb(24, 85, 97);
+    transition: all 0.5s;
+}
+.header-right .login{
+    height: 67px;
+    padding: 30px 25px 0 45px;
+    color: white;
+    cursor: pointer;
+    display: block;
+}
+.humberger {
+  position: relative;
+  height: 32px;
+  width: 28px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.humberger div {
+  position: absolute;
+  left: 0;
+  height: 4px;
+  width: 28px;
+  background-color: white;
+  border-radius: 2px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.humberger div:nth-of-type(1) {
+  top: 0;
+}
+.humberger div:nth-of-type(2) {
+  top: 8px;
+}
+.humberger div:nth-of-type(3) {
+  top: 16px;
+}
+.humberger div:nth-of-type(4) {
+  top: 24px;
 }
 
 /*How_to*/
 .How_head{
     color:black;
-    font-size:210%;
+    font-size:400%;
     margin:0;
 }
 
@@ -18,16 +83,15 @@
     background-color:white;
 }
 .contact_address{
-    color: red;
-    margin:0 auto;
+    color: black;
     font-size:30px;
     padding: 50px 0 30px 0;
     text-align: center;
 }
 .contact_address img{
     position:relative;
-    top:10px;
-    left:-350px;
+    top:-53px;
+    left:-300px;
     height:65px;
     width:80px;
     
@@ -48,8 +112,8 @@
 }
 .contact_number img{
     position:relative;
-    top:10px;
-    left:-350px;
+    top:-53px;
+    left:-300px;
     height:65px;
     width:100px;
     
@@ -58,8 +122,10 @@
 
 /*honda*/
 .top-wrapper{
+    width: 100%;
+    height: 500px;
     padding: 180px 0 150px 0;
-    background-image: url(img/honda.jpeg);
+    background-image: url(img/calling.jpeg);
     background-size: cover;
     text-align:center;    
 }
