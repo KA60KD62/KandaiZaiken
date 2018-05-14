@@ -36,7 +36,7 @@ header{
     width: 28vmax;
     height: auto;
     border: 0.3rem solid aliceblue;
-    background-color: #D7DF01;
+    background-color: #d5c71e;
     z-index: 100;  
     top:5%;/*座標調整*/
     left: 50%;/*座標調整*/
@@ -116,20 +116,34 @@ header{
 /*各紹介*/
 /*m1とb4*/
 .member-photo{
-    width:80%;
-    height:80%;
+    padding-top:1rem;
+    width:75%;
+    height:75%;
     border-radius:100%;
 }
 .member-photo-m1{
+    padding-top:1rem;
     width:59%;
     height:59%;
+    border-radius:100%;
+}
+.member-photo-teacher{
+    padding-top:1rem;
+    width:75%;
+    height:75%;
     border-radius:100%;
 }
 .member-wrapper {
   height: 100%;
   background-color: gold;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 3rem;
+  padding-bottom:1.5rem
+}
+.teacher {
+  text-align: center;
+  width: 25%;
+  margin-left:37.5%;
 }
 .memberb4 {
   float: left;
@@ -175,7 +189,7 @@ header{
     display: block;
     clear: both;
 }
-/*リンク*/
+/*リンク--------------------------------------*/
 .member-btn {
   padding: 8px 24px;
   color: black;
@@ -186,7 +200,7 @@ header{
   font-size:2.2vmax;
 }
 #link-font{
-  color:aliceblue;
+  color:gold;
   font-size:2.2vmax;
 }
 /*メッセージ全体*/
@@ -204,6 +218,23 @@ header{
   padding-bottom: 80px;
   text-align: center;
 }
+
+/*ボタン*/
+.member-message {
+  padding: 15px 0;
+  background-color: yellow;
+  cursor: pointer;
+  box-shadow: 0px 7px gold;
+}
+.member-message:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+
+
+
+
 
 /*footer--------------------------------------------------*/
 .footer-name-logo{
@@ -223,6 +254,11 @@ footer{
 /*レスポンシブ------------------------------------------------------*/
 @media all and (max-width: 1000px) {
 /*memberメンバー紹介*/
+  .teacher {
+    width: 100%;
+    margin-bottom: 50px;    
+    margin-left: 0;
+  }
   .memberb4 {
     width: 100%;
     margin-bottom: 50px;    
@@ -244,12 +280,22 @@ footer{
     width:50%;
     height:50%;
     border-radius:100%;
-}    
+}   
+.member-photo-teacher{
+    width:50%;
+    height:50%;
+    border-radius:100%;
+}   
+.member-wrapper {
+
+  padding-bottom:0;
+}
+
 /*共通body*/
   body{
     overflow: scroll;
   }
-
+}
 @media all and (min-width: 1000px) {
   padding:15px 15px ;
 }
